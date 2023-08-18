@@ -14,3 +14,28 @@
     height: 100px;
     background-color: aqua;
 }
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 100vh; */
+   gap: 20px;
+    
+}
+.clock{
+width: 150px;
+height: 150px;
+background-color: yellow;
+text-align: center;
+font-size: 50px;
+}
+.CLASSS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.BOXXX{
+    font-size: 50px;
+}
