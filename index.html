@@ -7,34 +7,114 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading">Hello world</h1>
+    <h1 style="text-align: center;">DOM QUESTIONS</h1>
+    <h2 id="text"> Q1 : Write the code to access element which is having id as "text"</h2>
+    <button id="btn1">Click here to Access</button>    
+    <button id="reset1">Reset</button>
+    <p> Ans : let ans1 = document.getElementById("Q1")<pre>
 
-    <button id="button">Replace text</button><br>
+    </pre></p>
 
-    <button id="button2">Click to change the color</button>
+    <h2> Q2 : Write the code to access element which is having tag as "h1"</h2>
+    <button id="btn2">Click here to access Tag</button>
+    <button id="reset2">Reset</button>
+    <p><pre> Ans : let ans2= document.getElementsByTagName("h2")[1]</pre></p>
 
-    <div id="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+    <h2 class="text2"> Q3 : Write the code to access element which is having class as "box"</h2>
 
-    <button id="button3">change the flex direction</button>
+    <button id="btn3">Click here to acess the Class</button>
+    <button id="reset3">Rest</button>
+    <p><pre>Ans: let ans3= document.getElementsByClassName("text2")[0]</pre></p>
+    <h2>Q4 :
+        Change the heading from ""Hello"" to ""Hello World"" using DOM functions</h2>
+    <h2 id="text3">  Hello</h2>
+        <button id="btn4">Click to  Change the content</button>
+        <button id="reset4">Reset</button>
+
+        <p><pre> Ans : btn4.addEventListener('click' ,function(){
+            ans4.innerText="Hello World"
+        })</pre></p>
+
+        <h2>Q5 : Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h2>
+        <h2 id="text4">Hello World</h2>
+
+        <button id="btn5">Replace text</button>
+        <p><pre>Ans : const ans5= document.getElementById("text4")
+            const btn5=document.getElementById("btn5")
+            
+            btn5.addEventListener("click" , function(){
+                text4.innerText="WELCOME TO ELEVATION ACADEMY"
+                text4.style.color="darkgreen"
+            })</pre></p>
+
+            <h2 id="heading">Q6 :
+
+                Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h2>
+
+                <button id="btn6">Click to Change the color</button>
+
+                <p><pre>const ans6 = document.getElementById("heading");
+                    const btn6 = document.getElementById("btn6")
+                    
+                    btn6.addEventListener('click' ,function(){
+                        ans6.style.color="red"
+                    })
+                    </pre></p>
+
+                    <h2> Q7 : Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h2>
+                    <button id="btn7">Change the flex Direction</button>
+                    
+                    <div id="container">
+                       <div class="boxxx">card1</div>
+                       <div class="boxxx">card2</div>
+                       <div class="boxxx">card3</div>
+                    </div>
+
+                    <p><pre> Ans : let ans7= document.getElementById("container");
+                        let btn7 = document.getElementById("btn7")
+                        
+                        btn7.addEventListener("click" , function(){
+                            ans7.style.flexDirection="column"
+                        })</pre></p>
+
+                        <h2> Q8 : What’s the difference between window vs document?</h2>
+                        <p>Ans : The window object represents a window/tab containing a DOM document where as document object is property of window object that points to the DOM document loaded in that window</p>
 
 
-    <div id="box">
-        <div class="clock" id="hourss">10 </div>
+
+                        <h2> Q9: Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h2>
+                    <div id="box">
+                        <div class="clock" id="hourss">10 </div>
+                        
+                        <div class="clock" id="minutess">11 </div>
+                        <div class="clock" id="secondss"> 10 </div>
+                    </div>
+                    <p><pre> Ans  : function clock(){
+                        const date = new Date()
+                        let hours = date.getHours()
+                        let minutes =date.getMinutes()
+                        let seconds =date.getSeconds()
+                    
+                        if(hours>=12){
+                            hours=hours-12
+                        }
+                    
+                    console.log(hours,minutes,seconds)
+                    
+                    let hrs =document.getElementById("hourss")
+                    hrs.innerText=hours
+                    let min=document.getElementById("minutess")
+                    min.innerText=minutes
+                    let sec=document.getElementById("secondss")
+                    sec.innerText = seconds
+                    }
+                    setInterval(()=>{
+                        clock()
+                    },1000)</pre></p>
+                   
+
+
         
-        <div class="clock" id="minutess">11 </div>
-        <div class="clock" id="secondss"> 10 </div>
-    </div>
-    <div class="CLASSS">
-        <div class="BOXXX">HOUR</div>
-        <div class="BOXXX">MIN</div>
-        <div class="BOXXX">SEC</div>
-    </div>
-  
-
-    <script src="./hanson.js"></script>
+<script src="./hanson.js"></script>
 </body>
 </html>

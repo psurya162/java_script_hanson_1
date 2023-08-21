@@ -1,41 +1,35 @@
-*{
-    margin: 0;padding: 0;
-    box-sizing: border-box;
+#box{
+    display: flex;
+    gap: 30px;
 }
-#heading{
-    background-color: yellowgreen;
+.clock{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: 26px;
+    text-align: center;
+}
+#HEAD{
+    text-align: center;
+    font-size: 35PX;
 }
 #container{
     display: flex;
-    gap: 10px;
+    gap:30px;
+
 }
-.box{
-    width: 100px;
-    height: 100px;
+.boxxx{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+h1{
+    text-decoration: underline;
+    background-image: linear-gradient(to left ,red,green,yellow);
+}
+body{
     background-color: aqua;
-}
-#box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* height: 100vh; */
-   gap: 20px;
-    
-}
-.clock{
-width: 150px;
-height: 150px;
-background-color: yellow;
-text-align: center;
-font-size: 50px;
-}
-.CLASSS{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-.BOXXX{
-    font-size: 50px;
 }
